@@ -181,7 +181,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 .content {
 	display: flex;
 	background-color: #000000;
-	margin: 33px 0 0 0;
+	margin: 33px 0 75px 0;
 }
 .content__colum {
 	flex: 0 0 50%;
@@ -247,3 +247,66 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 	font-weight: 600;
 }
 /*content*/
+
+/*catering*/
+.catering {}
+.typesfood {
+	display: flex;
+	justify-content:center;
+	
+}
+.typesfood__colum {
+	width: 220px; /* ограничил ширину(что если большой монитор ) */
+}
+.colum__img {
+	margin: 0 0 25px 0;
+}
+.colum__img-item {}
+.colum__headline {
+	height: 45px;
+	font-size: 25px;
+	font-family: 'AkzidenzGroteskBQCondensedBold';
+	color: rgb(0, 0, 0);
+	text-transform: uppercase;
+	line-height: 1;
+	text-align: left;
+	margin: 0 0 30px 0;
+	padding: 0 35px 0 5px;
+	letter-spacing: 2px;
+}
+.colum__text {
+	height: 64px;
+	font-size: 15px;
+	font-family: 'PT Sans', sans-serif; /* трабл */ 
+	color: rgb(0, 0, 0);
+	text-align: left;
+	margin: 0 0 0 0;
+	padding: 0 35px 0 5px;
+}
+.colum__buttom {
+	margin: 40px 0 30px 0;
+	padding: 0 35px 0 5px;
+}
+.colum__buttom-item {
+	color: #fffffe;
+	font-family: Bebas;
+	font-size: 18px;
+	line-height: 25px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 15px 34px;
+	background-color: #000000;
+	font-weight: 600;
+}
+.colum__link {
+	padding: 0 35px 0 5px;
+}
+.colum__link-item {
+	font-size: 15px;
+	font-family: "Bebas";
+	color: rgb(0, 0, 0);
+	text-decoration: underline;
+	text-transform: uppercase;
+	text-align: left;
+}
+/*catering*/
