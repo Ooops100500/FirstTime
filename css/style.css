@@ -17,7 +17,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 /*--------------------*/
 
 /*<Подключаем шрифты>*/
-@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap'); 
 @font-face {
 	font-family: 'AkzidenzGroteskBQCondensedBold';
 	src: url('../fonts/AkzidenzGroteskBQCondensedBold.eot');
@@ -253,6 +253,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 .typesfood {
 	display: flex;
 	justify-content:center;
+	margin: 0 0 20px 0; 
 	
 }
 .typesfood__colum {
@@ -310,3 +311,69 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 	text-align: left;
 }
 /*catering*/
+
+/*about*/
+.about {}
+.choose {
+	width: 100%;
+}
+.choose__top {
+	display: flex;
+	background-color: #000000;
+}
+.top-colum {
+	flex: 0 0 50%;
+	height: 150px;
+}
+.top-colum__text {
+	margin: 60px 65px 60px 0;
+	font-size: 50px;
+	font-family: 'AkzidenzGroteskBQCondensedBold';
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	line-height: 0.5;
+	text-align: right;
+}
+.top-colum__img {
+	width: 100%;
+	height: 150px;
+}
+.choose__bottom {
+	background-color: rgb(235, 235, 235);
+	display: flex;
+	height: 350px;
+}
+.bottom-colum {
+	flex: 0 0 50%;
+}
+.choose-info {
+	margin: 50px 0 0 0px;
+	display: flex;
+	width: 400px;
+}
+.choose-info2{
+	margin: 50px 0 0 5px;
+	display: flex;
+	width: 400px;
+}
+.choose-info__textblock{
+	margin: 0 0 0 15px;
+
+}
+.choose-info__img {}
+.choose-info__img-item {}
+.choose-info__headline {
+	font-size: 25px;
+	font-family: 'AkzidenzGroteskBQCondensedBold';
+	color: rgb(0, 0, 0);
+	text-transform: uppercase;
+	line-height: 1;
+}
+.choose-info__text {
+	font-size: 15px;
+	font-family: "PTSans";
+	color: rgb(0, 0, 0);
+	line-height: 1.667;
+}
+
+/*about*/
