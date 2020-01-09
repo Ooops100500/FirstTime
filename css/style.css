@@ -32,6 +32,38 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 	font-weight: normal;
 	font-style: normal;
 }
+
+@font-face{
+font-family: 'PT Sans';
+src:url('../fonts/ptsans-bold-webfont.woff2') format('woff2'),
+	url('../fonts/ptsans-bold-webfont.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face{
+font-family: 'PT Sans';
+src:url('../fonts/ptsans-bolditalic-webfont.woff2') format('woff2'),
+	url('../fonts/ptsans-bolditalic-webfont.woff') format('woff');
+	font-weight: 700;
+	font-style: italic;
+}
+
+@font-face{
+font-family: 'PT Sans';
+src:url('../fonts/ptsans-italic-webfont.woff2') format('woff2'),
+	url('../fonts/ptsans-italic-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face{
+font-family: 'PT Sans';
+src:url('../fonts/ptsans-regular-webfont.woff2') format('woff2'),
+	url('../fonts/ptsans-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
 /*<Подключаем шрифты>*/
 
 /*header*/
@@ -127,7 +159,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 .header-logo__text1 {
 	display: block;
 	text-align: center;
-	font-family: Bebas;
+	font-family: 'Bebas';
 	font-size: 9px;
 	text-transform: uppercase;
 	letter-spacing: 6px;
@@ -138,7 +170,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 .header-logo__text {
 	display: block;
 	text-align: center;
-	font-family: Bebas;
+	font-family: 'Bebas';
 	font-size: 9px;
 	text-transform: uppercase;
 	letter-spacing: 8px;
@@ -208,7 +240,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 	width: 303px;
 	height: 39px;
 	color: #ffffff;
-	font-family: "PT Sans";
+	font-family: 'PT Sans';
 	font-size: 16px;
 	line-height: 25px;
 	margin: 0 0 0px 0px
@@ -221,7 +253,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 .button-quote {}
 .button-quote__link {
 	color: #000000;
-	font-family: Bebas;
+	font-family: 'Bebas';
 	font-size: 18px;
 	line-height: 25px;
 	text-transform: uppercase;
@@ -237,7 +269,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 	width: 92px;
 	height: 16px;
 	color: #fffffe;
-	font-family: Bebas;
+	font-family: 'Bebas';
 	font-size: 18px;
 	line-height: 25px;
 	text-decoration: underline;
@@ -278,7 +310,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 .colum__text {
 	height: 64px;
 	font-size: 15px;
-	font-family: 'PT Sans', sans-serif; /* трабл */ 
+	font-family: 'PT Sans', sans-serif;
 	color: rgb(0, 0, 0);
 	text-align: left;
 	margin: 0 0 0 0;
@@ -290,7 +322,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 }
 .colum__buttom-item {
 	color: #fffffe;
-	font-family: Bebas;
+	font-family: 'Bebas';
 	font-size: 18px;
 	line-height: 25px;
 	text-transform: uppercase;
@@ -304,7 +336,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 }
 .colum__link-item {
 	font-size: 15px;
-	font-family: "Bebas";
+	font-family: 'Bebas';
 	color: rgb(0, 0, 0);
 	text-decoration: underline;
 	text-transform: uppercase;
@@ -316,6 +348,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 .about {}
 .choose {
 	width: 100%;
+	margin-bottom: 82px;
 }
 .choose__top {
 	display: flex;
@@ -329,6 +362,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 	margin: 60px 65px 60px 0;
 	font-size: 50px;
 	font-family: 'AkzidenzGroteskBQCondensedBold';
+	letter-spacing: 4.5px;
 	color: rgb(255, 255, 255);
 	text-transform: uppercase;
 	line-height: 0.5;
@@ -346,8 +380,14 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 .bottom-colum {
 	flex: 0 0 50%;
 }
+.bottom-colum1 {
+	flex: 0 0 50%;
+	display: flex;
+	align-items: flex-end;
+	flex-direction: column;
+}
 .choose-info {
-	margin: 50px 0 0 0px;
+	margin: 50px 35px 0 0px;
 	display: flex;
 	width: 400px;
 }
@@ -371,9 +411,127 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 }
 .choose-info__text {
 	font-size: 15px;
-	font-family: "PTSans";
+	font-family: 'PT Sans';
 	color: rgb(0, 0, 0);
 	line-height: 1.667;
 }
 
 /*about*/
+/*box*/
+
+.box {}
+.hello {}
+.hello__top {
+	display: flex;
+	width: 885px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.hello__colum {
+	width: 50%;
+}
+.hello__colum-black{
+	background-color: #252525; 
+}
+.hello__block {}
+.hello__block h1 {
+	font-size: 50px;
+	font-family: 'AkzidenzGroteskBQCondensedBold';
+	color: rgb(0, 0, 0);
+	text-transform: uppercase;
+	margin-bottom: 31px;
+}
+.hello__info {}
+.hello__address {
+	margin-bottom: 25px;
+	margin-left: 5px;
+}
+.hello__address img{
+	margin-right: 10px;
+}
+.hello__address span {
+	font-size: 15px;
+	font-family: 'PT Sans';
+	color: rgb(0, 0, 0);
+ }
+
+.hello__maill{
+	margin-bottom: 25px;
+	margin-left: 5px;
+	margin-top: 82px;
+}
+.hello__maill a {
+	font-size: 15px;
+	font-family: 'PT Sans';
+	color: rgb(0, 0, 0);
+ }
+ .hello__maill img{
+ 	margin-right: 10px;
+ }
+.hello__bottom {
+	display: flex;
+}
+.hello__map {
+	width: 100%;
+}
+.formstyle {
+	width: 375px;
+	font-size: 15px;
+	font-family: 'PT Sans';
+	color: #8e8e8e;
+	border: 2px solid#959595;
+	background-color: #252525;
+	padding-left: 18px;
+	height: 50px;
+	margin-bottom: 25px;
+}
+.form {
+	display: flex;
+	flex-direction: column;
+	margin-left: 60px;
+	margin-top: 55px;
+}
+.form__headline {
+	font-size: 25px;
+	font-family: 'AkzidenzGroteskBQCondensedBold';
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+.form__login {
+
+}
+.form__mail {}
+.form__message {
+	padding-top: 12px;
+	height: 100px;
+}
+.form__button {
+	width: 155px;
+	height: 50px;
+	font-size: 18px;
+	font-family: 'Bebas';
+	letter-spacing: 1.3px;
+	color: rgb(0, 0, 0);
+	text-transform: uppercase;
+	background-color: #ffffff;
+}
+/*box*/
+/*footer*/
+.footer {
+	display: flex;
+}
+.footer__colum{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 128px;
+	width: 50%;
+}
+.footer__call {
+  font-size: 15px;
+  font-family: 'PTSans';
+  color: rgb(77, 77, 77);
+}
+.footer__logo {}
+/*footer*/
